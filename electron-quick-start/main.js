@@ -1,4 +1,4 @@
-// const echarts = require('./echarts')
+//const echarts = require('./echarts')
 
 const electron = require('electron')
 // Module to control application life.
@@ -9,10 +9,12 @@ const BrowserWindow = electron.BrowserWindow
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
+const Menu = electron.Menu
 let mainWindow
 
 function createWindow () {
   // Create the browser window.
+  Menu.setApplicationMenu(null)
   mainWindow = new BrowserWindow({width: 800, height: 600})
 
   // and load the index.html of the app.

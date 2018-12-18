@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
+  "dependencies": {"electron": "~6.4.1"},
   "scripts": {
     "start": "electron ."
   },
